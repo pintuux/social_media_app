@@ -1,0 +1,29 @@
+1.Signup 
+
+    -->POST: /api/user/signup
+    description: for the signup we need username, email and password
+
+2. SignIn
+
+    -->POST: /api/user/signin
+    description: for the signin we need email and password
+
+3. Post image 
+
+    -->POST: /api/post/newpost
+    description: you need to pass image url throw the body
+
+    -->GET: /api/post/allpost
+
+    -->DELETE: /api/post/delete/:id
+    description: "id= postId" we have to pass postId
+    
+    -->PUT: /api/post/update/:id
+    description: "id= postId" we have to pass postId and  pass the imageurl to you want to update
+
+4. Comments on post
+    -->POST: /api/comments/postcomment/:id
+    description: here "id = postId"
+
+    -->PUT: /api/comments/update/?query
+    description: here query contain to parameters postId and commentId
